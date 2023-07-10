@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<launch>
+
+    <rosparam file="$(find controller)/conf/gains.yaml" command="load" />
+
+</launch>

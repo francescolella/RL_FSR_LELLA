@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<launch>
+ 
+  <arg name="pln_call" default="true" />
+
+
+  <include file="$(find controller)/launch/control.launch">
+  </include>
+  <include file="$(find planner)/launch/planner.launch">
+  </include>
+
+
+
+</launch>

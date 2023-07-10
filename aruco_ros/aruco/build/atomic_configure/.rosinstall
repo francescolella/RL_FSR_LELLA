@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/jcacace/ros_ws/src/aruco_ros/aruco/build/devel/setup.sh
