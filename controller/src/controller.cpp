@@ -382,22 +382,22 @@ void IRIS_CTRL::allocation_cb(geometry_msgs::Vector3ConstPtr tau_b)
 		// propeller velocity saturation
 		if (_vel[0] > vel_lim)
 		{
-			cout << "saturazione vel_0" << endl;
+			//cout << "saturazione vel_0" << endl;
 			_vel[0] = vel_lim;
 		}
 		if (_vel[1] > vel_lim)
 		{
-			cout << "saturazione vel_1" << endl;
+			//cout << "saturazione vel_1" << endl;
 			_vel[1] = vel_lim;
 		}
 		if (_vel[2] > vel_lim)
 		{
-			cout << "saturazione vel_2" << endl;
+			//cout << "saturazione vel_2" << endl;
 			_vel[2] = vel_lim;
 		}
 		if (_vel[3] > vel_lim)
 		{
-			cout << "saturazione vel_3" << endl;
+			//cout << "saturazione vel_3" << endl;
 			_vel[3] = vel_lim;
 		}
 	}

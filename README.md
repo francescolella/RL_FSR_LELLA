@@ -3,17 +3,20 @@ This is my technical project for the courses of Robotics Lab and Field and Servi
 # Download
 Create a new folder for the ROS workspace with a 'src' folder inside.
 
-Inside the 'src' folder clone all the files of this repository using the command
-- git clone \<url> .
+You can create a new workspace with the following commands:
 
-The 'src' folder needs to be empty for this to work.
+$ mkdir -p ~/NAME_WORKSPACE/src
+$ cd ~/NAME_WORKSPACE/
+$ catkin_make
+
+Inside the 'src' folder clone all the files of this repository using the command
+$ git clone \<url> .
+
+The 'src' folder needs to be empty for this to work but if you followed privious commands it is empty.
 
 # Compilation
-After cloning, from the workspace main directory, run the following commands:
+After cloning, from the workspace main directory, run the following command:
 - catkin_make
-- source devel/setup.bash
-
-The second command needs to be executed every time a new terminal is opened. To avoid this add the command to the '.bashrc' file.
 
 ### Dependencies
 Some dependencies (aruco_ros, px4_gazebo_standalone, mav_comm) were cloned inside the repository, others will have to be installed. Some of these are:
@@ -23,7 +26,11 @@ Some dependencies (aruco_ros, px4_gazebo_standalone, mav_comm) were cloned insid
 There are of course other dependencies which should however be already installed with ROS.
 
 # Running
-To run the project open four terminals (don't forget "source devel/setup.bash") and execute the following commands, one for each terminal:
+To run the project open four terminals and execute:
+$ source devel/setup.bash
+the command needs to be executed every time a new terminal is opened. To avoid this add the command to the '.bashrc' file.
+
+After, execute the following commands, one for each terminal:
 1. roslaunch my_scenario my_scenario.launch
 2. roslaunch my_scenario start.launch
 3. rosrun controller controller
